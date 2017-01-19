@@ -1,9 +1,20 @@
 let React = require('react');
+let {Link} = require('react-router');
 
 let Examples = React.createClass({
   render: function () {
     return (
-      <h3>Examples component!</h3>
+      <div>
+        <h1 className="text-center">Examples component!</h1>
+        <ol>
+          <li>
+            <Link to='/?location=Yambol'>Yambol</Link>
+          </li>
+          <li>
+            <Link to='/?location=Rio'>Rio, Brasil</Link>
+          </li>
+        </ol>
+      </div>
     )
   }
 });
