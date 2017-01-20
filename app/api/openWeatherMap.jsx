@@ -15,10 +15,12 @@ module.exports = {
     return axios.get(requestUrl)
         .then(function(res) {
           console.log(res);
-          if (res.data.name.toLowerCase() !== location.toLowerCase()) {
-            alert('Location not found!');
+          if (res.data.name.toLowerCase() === location.toLowerCase()) {
+            //alert('Location not found!');
+            return res.data;
           } else {
-            return res.data.main.temp;
+            //return res.data.main.temp;
+            //return res.data;
           }
         })
         .catch(function(err) {
