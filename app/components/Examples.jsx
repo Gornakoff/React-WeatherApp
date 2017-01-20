@@ -5,7 +5,7 @@ let Examples = React.createClass({
   render: function () {
     return (
       <div>
-        <h1 className="text-center">Examples component!</h1>
+        <h1 className="text-center page-title">Examples</h1>
         <ol>
           <li>
             <Link to='/?location=Yambol'>Yambol</Link>

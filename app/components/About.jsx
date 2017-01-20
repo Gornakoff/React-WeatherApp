@@ -3,8 +3,8 @@
 let About = React.createClass({
   render: function () {
     return (
-      <div className="">
-        <h1 className="text-center">About</h1>
+      <div>
+        <h1 className="text-center page-title">About</h1>
         <p>This is weather application built using React!</p>
         <p>Tools used:</p>
         <ul>
